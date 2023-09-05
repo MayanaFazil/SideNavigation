@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)file:///D:/560/mainpage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./maipage_files/font-awesome.min.css">
+        <title>maipage</title>
+        <style>
+
+
+            /* CSS for Side naviagtion-bar started */
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Poppins', sans-serif;
+                }
+                .header{
+                    width: 100%;
+                    height: 100vh;              
+                    background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2Vic2l0ZSUyMHRlbXBsYXRlc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    font-family: sans-serif;
+                    background-size: 100% 100%;
+                }
+                .side-nav{
+                    width: 110px;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    padding: 30px 15px;
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    transition: width 0.5s;
+                }
+                .user{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 60px;
+                    font-size: 12px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    overflow: hidden;
+                }
+                .user div{
+                    display: none;
+                }
+                .user h2{
+                    font-size: 15px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                }
+                .user-img{
+                    width: 40px;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+                .star-img{
+                    width: 20px;
+                    display: none;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0 15px;
+                }
+                ul li{
+                    margin: 30px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+                ul li img{
+                    width: 30px;
+                    margin-right: 0;
+                }
+                ul li p{
+                    white-space: nowrap;
+                    display: none;
+                }
+                .side-nav:hover{
+                    width: 250px;
+                }
+                .side-nav:hover .user div{
+                    display: block;
+                }
+                .side-nav:hover .user{
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                }
+                .side-nav:hover .star-img{
+                    display: block;
+                }
+                .side-nav:hover .user-img{
+                    margin: 0%;
+                }
+                .side-nav:hover ul li p{
+                    display: inline-block;
+                }
+                .side-nav:hover ul li img{
+                    margin-right: 10px;
+                }
+                .side-nav:hover ul li{
+                    justify-content: flex-start;
+                }
+            /* CSS for side naviagtion-bar over */
+
+
+
+            /* CSS for middle search bar started */
+                .container{
+                    width: 100%;
+                    min-height: 100vh;
+                    padding: 5%;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .search-bar{
+                    width: 100%;
+                    max-width: 700px;
+                    background: rgba(255, 255, 255, 0.2);
+                    display: flex;
+                    align-items: center;
+                    border-radius: 60px;
+                    padding: 10px 20px;
+                    backdrop-filter: blur(4px) saturate(180%);
+                }
+                .search-bar input{
+                    background: transparent;
+                    flex: 1;
+                    border: 0;
+                    outline: none;
+                    padding: 24px 20px;
+                    font-size: 20px;
+                    color: #0a0a0a;
+                }
+                ::placeholder{
+                    color:#0d0d0e
+                }
+                .search-bar button img{
+                    width: 25px;
+                }
+                .search-bar button{
+                    border: 0;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                    background: #58629b;
+                    cursor: pointer;
+                }
+            /* CSS for middle search bar over */
+
+
+
+            /* CSS for top naviagtion-bar started */
+                * {box-sizing: border-box;}
+                .topnav {
+                    overflow: hidden;
+                }
+                .topnav a {
+                    float: right;
+                    display: flex;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+                .topnav a.active {
+                    font-style: bold;
+                    color: black;
+                }
+                .topnav .search-container {
+                    float: right;
+                }
+                .topnav input[type=text] {
+                    padding: 6px;
+                    margin-top: 8px;
+                    font-size: 17px;
+                    border: none;
+                    background-color: rgb(125, 172, 103);
+                }
+                .topnav .search-container button {
+                    float: right;
+                    padding: 6px 10px;
+                    margin-top: 8px;
+                    margin-right: 16px;
+                    background: #ddd;
+                    font-size: 17px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .topnav .search-container button:hover {
+                    background: #ccc;
+                }
+                @media screen and (max-width: 600px) {
+                    .topnav .search-container {
+                        float: none;
+                    }
+                    .topnav a, .topnav input[type=text], .topnav .search-container button {
+                        float: none;
+                        display: block;
+                        text-align: right;
+                        width: 100%;
+                        margin: 0;
+                        padding: 14px;
+                        
+                    }
+                    .topnav input[type=text] {
+                        border: 1px solid #c9db24;  
+                    }
+                }
+            /* CSS for top naviagtion-bar over */
+
+        </style>
+    </head>
+
+    <body>
+        <!--If any code want to write with in background yelow it should be written within header-->
+        <div class="header">
+
+
+            <!--Side navigation-bar buttons.-->
+                <div class="side-nav">
+                    <div class="user">
+                        <img src="./maipage_files/user.png" class="user-img">
+                        <div>
+                            <h2>Fazil Khan</h2>
+                            <p>fazil@xyz.com</p>
+                        </div>
+                        <img src="./maipage_files/star.png" class="star-img">
+                    </div>
+                    <ul>
+                        <li><img src="./maipage_files/dashboard.png"><a href="file:///D:/560/mainpage.html"><p><b>Dashboard</b></p></a></li>
+                        <li><img src="./maipage_files/certificate.png"><a href="file:///D:/560/certificates.html"><p><b>Certificates</b></p></a></li>
+                        <li><img src="./maipage_files/messages.png"><a href="file:///D:/560/messages.html"><p><b>Messages</b></p></a></li>
+                        <li><img src="./maipage_files/projects.png"><a href="file:///D:/560/projects.html"><p><b>My Projects</b></p></a></li>
+                        <li><img src="./maipage_files/setting.png"><a href="file:///D:/560/settings.html"><p><b>Settings</b></p></a></li>
+                        <li><img src="./maipage_files/about.png"><a href="file:///D:/560/about.html"><p><b>About</b></p></a></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./maipage_files/logout.png"><a href="file:///D:/560/settings.html"><p><b>Logout</b></p></a></li>
+                    </ul>
+                </div>
+            <!--Side navigation-bar buutons over.-->
+
+
+
+            <!--Top navigation-bar buttons started.-->
+                <div class="topnav">
+                    <div class="search-container">
+                        <form action="https://www.google.com/search" method="get">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <a href="file:///D:/560/contact.html">Contact</a>
+                    <a href="file:///D:/560/about.html">About</a>
+                    <a class="active" href="file:///D:/560/mainpage.html">Home</a>
+                </div>
+            <!--Top navigation-bar buttons over.-->
+
+
+
+            <!--Middle search bar button started.-->
+                <div class="container">
+                    <form action="https://www.google.com/search" method="get" class="search-bar">
+                        <input type="text" placeholder="search anything" name="q">
+                        <button type="submit"><img src="./maipage_files/search.png"></button>
+                    </form>
+                </div>
+            <!--Middle search bar button over.-->
+
+
+
+
+        </div>
+        <!--Header is over now any code written after this will be scrolled down in new page.
+             The background-image will not be applied-->
+       
+    
+</body></html>
